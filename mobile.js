@@ -21,3 +21,12 @@ window.addEventListener('scroll', function(){
     header.style.backgroundColor = 'rgba(211, 211, 211, 1)'; 
   }
 })
+
+function myMenuFunction(){
+  var i = document.getElementById("navMenu");
+  if(i.className === "nav-menu"){
+    i.className += " responsive";
+  }else{
+    i.className += "nav-menu";
+  }
+}

@@ -7,41 +7,52 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:title" content="Home">
         <meta property="og:type" content="website">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="homepage.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     </head>
     <body>
-        <header id="mainHeader">
-            <a class="logo" href="/"><img src="images/Greeny.svg" alt="logo"></a>
-            <nav>
-                <ul class="nav__links">
-                    <li><a class="cta" href="#">Home</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Community</a></li>
-                    <li><a href="#">Learning</a></li>
-                    <li><a href="#">Farm Hub</a></li>
-                </ul>
+        <div class="wrapper">
+            <nav class="nav">
+                <div class="nav-logo">
+                    <a class="logo" href="homepage.html"><img src="images/Greenery.svg" alt="logo"></a>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="homepage.html" class="link active">Home</a></li>
+                        <li><a href="#" class="link">Settings</a></li>
+                        <li><a href="#" class="link">Community</a></li>
+                        <li><a href="#" class="link">Learning</a></li>
+                        <li><a href="#" class="link">Farm Hub</a></li>
+                    </ul>
+                </div>
+                <div class="nav-button">
+                    <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+                    <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+                </div>
+                <div class="nav-menu-btn">
+                    <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+                </div>
             </nav>
-            <p class="menu cta">Menu</p>
-        </header>
-        <div id="mobile__menu" class="overlay">
-            <a class="close">&times;</a>
-            <div class="overlay__content">
-                <a href="#">Home</a>
-                <a href="#">Settings</a>
-                <a href="#">Community</a>
-                <a href="#">Learning</a>
-                <a href="#">Farm Hub</a>
+            <div class="content">
+                <h1 class="animate"><b>Greenery</b></h1> 
+                <h3 class="animate">Green and Crop Management</h3>
+                <p class="animate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                    Hac habitasse platea dictumst quisque sagittis purus.</p>
+                <a href="#" class="content-button1 animate">How it works?</a>    
+                <a href="j" class="content-button2 animate">Get Started</a>    
             </div>
+            <img src="images/nandhu-kumar-5NGTf4oD8RA-unsplash.jpg" class="feature-img animate">
         </div>
-        <div class="carousel" data-flickity='{"autoplay": true}'>
-            <div class="carousel-cell" style="background-image: url(images/1.jpg)"></div>
-            <div class="carousel-cell" style="background-image: url(images/2.jpg)"></div>
-            <div class="carousel-cell" style="background-image: url(images/3.jpg)"></div>
-            <div class="carousel-cell" style="background-image: url(images/4.jpg)"></div>
-            <div class="carousel-cell" style="background-image: url(images/5.jpg)"></div>
+        <div class="carousel" data-flickity = '{"wrapAround" : "true", "autoPlay": true}'>
+            <div class="carousel-cell" style="background-image: url(images/roman-synkevych-fjj7lVpCxRE-unsplash.jpg)"></div>
+            <div class="carousel-cell" style="background-image: url(images/irewolede-PvwdlXqo85k-unsplash.jpg)"></div>
+            <div class="carousel-cell" style="background-image: url(images/jan-kopriva-LTMaAwxanGk-unsplash.jpg)"></div>
+            <div class="carousel-cell" style="background-image: url(images/steven-weeks-DUPFowqI6oI-unsplash.jpg)"></div>
+            <div class="carousel-cell" style="background-image: url(images/wilsan-u-BCATbA86WAw-unsplash.jpg)"></div>
         </div>
         <script type="text/javascript" src="mobile.js"></script>
 
