@@ -27,6 +27,6 @@ function myMenuFunction(){
   if(i.className === "nav-menu"){
     i.className += " responsive";
   }else{
-    i.className += "nav-menu";
+    i.className = "nav-menu";
   }
 }
