@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Green and Crop Management</title>
+        <meta name="description" content="Green and Crop Management">
+        <meta property="og:title" content="Home">
+        <meta property="og:type" content="website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Green and Crop Management</title>
+        <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+        <link rel="stylesheet" href="loggedInHomepage.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="nav">
+                <div class="nav-logo">
+                    <a class="logo" href="homepage.html"><img src="images/Greenery.svg" alt="logo"></a>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="homepage.html" class="link active">Home</a></li>
+                        <li><a href="#" class="link">Settings</a></li>
+                        <li><a href="#" class="link">Community</a></li>
+                        <li><a href="#" class="link">Learning</a></li>
+                        <li><a href="#" class="link">Farm Hub</a></li>
+                    </ul>
+                </div>
+                <div class="user-pic">
+                    <img src="images/myProfile.png"  onclick="toggleMenu()">
+                </div>
+
+                <div class="nav-menu-btn">
+                    <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+                </div>
+
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="images/myProfile.png">
+                            <h3>James Wong</h3>
+                        </div>
+                        <hr>
+                        <a href="#" class="sub-menu-link">
+                            <img src="images/profile.png">
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="images/setting.png">
+                            <p>Settings & Privacy</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="images/help.png">
+                            <p>Help & Support</p>
+                            <span>></span>
+                        </a>
+                        <a href="homepage.html" class="sub-menu-link">
+                            <img src="images/logout.png">
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div> 
+            </nav>
+        </div>
+        <script>
+            let subMenu = document.getElementById("subMenu");
+
+            function toggleMenu(){
+                subMenu.classList.toggle("open-menu");
+            }
+        </script>
+    </body>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">contact us</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">terms</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#">report a problem</a></li>
+                        <li><a href="#">subscription</a></li>
+                        <li><a href="#">community</a></li>
+                        <li><a href="#">profile</a></li>
+                        <li><a href="#">explore courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#">promote on greeny</a></li>
+                        <li><a href="#">help and support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</html>
