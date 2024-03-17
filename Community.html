@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login to account</title>
+        <meta name="description" content="Green and Crop">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Home">
+        <meta property="og:type" content="website">
+        <link rel="stylesheet" href="homepage.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="community.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <nav class="nav">
+                <div class="nav-logo">
+                    <a class="logo" href="homepage.html"><img src="images/Greenery.svg" alt="logo"></a>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="homepage.html" class="link">Home</a></li>
+                        <li><a href="#" class="link">Settings</a></li>
+                        <li><a href="#" class="link active">Community</a></li>
+                        <li><a href="#" class="link">Learning</a></li>
+                        <li><a href="#" class="link">Farm Hub</a></li>
+                    </ul>
+                </div>
+                <div class="nav-button">
+                    <a href="login.html">
+                        <button class="btn white-btn" id="loginBtn">Sign In</button>
+                    </a>
+                    <a href="signUp.html">
+                        <button class="btn" id="registerBtn">Sign Up</button>
+                    </a>
+                </div>
+                <div class="nav-menu-btn">
+                    <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+                </div>
+            </nav>
+             
+
+            <div class="container">
+                <div class="header">
+                    <h2>What's New</h2>
+                </div>
+
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="./images/news1.jpg" style="width:60%">
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <img src="./images/news2.jpeg" style="width:60%">
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <img src="./images/news3.jpeg" style="width:60%">
+                    </div>
+                </div>
+
+                <div class="header">
+                    <h2>Recommended for You</h2>
+                </div>
+
+                <div class="container2">
+                    <div class="box2">
+                        <div class="user-info2">
+                            <img class="user-photo2" src="./images/user.jpg" alt="User 1">
+                            <span>GreenThumbGuru</span>
+                        </div>
+                        <img class="post-img2" src="./images/post1.png" alt="Post 1">
+                        <div class="caption2">
+                            <p>Sustainable Agriculture: Enhancing </p>
+                            while preserving the environment. Join us to explore eco-friendly practices for modern plantations.</p>
+                        </div>
+                        <div class="like-dislike2">
+                            <img id="likeBtn1" src="./images/like.png" alt="Like" onclick="document.getElementById('likeBtn1').src='./images/liked.png'">
+                            <img id="dislikeBtn1" src="./images/dislike.png" alt="Dislike" onclick="document.getElementById('dislikeBtn1').src='./images/disliked.png'">
+                            <img src="./images/comment.png" alt="Comment">
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="user-info2">
+                            <img class="user-photo2" src="./images/user.jpg" alt="User 1">
+                            <span>GreenAgriChampion</span>
+                        </div>
+                        <img class="post-img2" src="./images/post1.png" alt="Post 1">
+                        <div class="caption2">
+                            <p>Eco-Friendly Farming Methods: Discover</p>
+                             sustainable approaches to maximize agricultural productivity while prioritizing environmental conservation. Let's cultivate a greener future together! </p>
+                        </div>
+                        <div class="like-dislike2">
+                            <img id="likeBtn1" src="./images/like.png" alt="Like" onclick="document.getElementById('likeBtn1').src='./images/liked.png'">
+                            <img id="dislikeBtn1" src="./images/dislike.png" alt="Dislike" onclick="document.getElementById('dislikeBtn1').src='./images/disliked.png'">
+                            <img src="./images/comment.png" alt="Comment">
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="user-info2">
+                            <img class="user-photo2" src="./images/user.jpg" alt="User 1">
+                            <span>EarthHarvestPro</span>
+                        </div>
+                        <img class="post-img2" src="./images/image2.jpeg" alt="Post 1">
+                        <div class="caption2">
+                            <p>Discussion: Sustainable Farming Solutions: Join the</p>
+                            conversation on implementing eco-conscious techniques to boost yields and protect natural resources. Together, we can nurture the Earth and our crops. </p>
+                        </div>
+                        <div class="like-dislike2">
+                            <img id="likeBtn1" src="./images/like.png" alt="Like" onclick="document.getElementById('likeBtn1').src='./images/liked.png'">
+                            <img id="dislikeBtn1" src="./images/dislike.png" alt="Dislike" onclick="document.getElementById('dislikeBtn1').src='./images/disliked.png'">
+                            <img src="./images/comment.png" alt="Comment">
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="user-info2">
+                            <img class="user-photo2" src="./images/user.jpg" alt="User 1">
+                            <span>AgriEcoInnovator</span>
+                        </div>
+                        <img class="post-img2" src="./images/image3.jpg" alt="Post 1">
+                        <div class="caption2">
+                            <p>Discussion: Innovations in Sustainable Agriculture: </p>
+                            Explore cutting-edge technologies and strategies to promote eco-friendly practices in plantation farming. Let's pioneer a greener revolution in agriculture! </p>
+                        </div>
+                        <div class="like-dislike2">
+                            <img id="likeBtn1" src="./images/like.png" alt="Like" onclick="document.getElementById('likeBtn1').src='./images/liked.png'">
+                            <img id="dislikeBtn1" src="./images/dislike.png" alt="Dislike" onclick="document.getElementById('dislikeBtn1').src='./images/disliked.png'">
+                            <img src="./images/comment.png" alt="Comment">
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="user-info2">
+                            <img class="user-photo2" src="./images/user.jpg" alt="User 1">
+                            <span>EcoFarmEnthusiast</span>
+                        </div>
+                        <img class="post-img2" src="./images/image4.jpeg" alt="Post 1">
+                        <div class="caption2">
+                            <p>Discussion: Sustainable Plantation Farming: Dive </p>
+                            into discussions on regenerative agriculture, organic practices, and biodiversity conservation for a healthier planet and more resilient farms. Join us in cultivating sustainability! </p>
+                        </div>
+                        <div class="like-dislike2">
+                            <img id="likeBtn1" src="./images/like.png" alt="Like" onclick="document.getElementById('likeBtn1').src='./images/liked.png'">
+                            <img id="dislikeBtn1" src="./images/dislike.png" alt="Dislike" onclick="document.getElementById('dislikeBtn1').src='./images/disliked.png'">
+                            <img src="./images/comment.png" alt="Comment">
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="user-info2">
+                            <img class="user-photo2" src="./images/user.jpg" alt="User 1">
+                            <span>PlanetFriendlyFarmer</span>
+                        </div>
+                        <img class="post-img2" src="./images/image5.png" alt="Post 1">
+                        <div class="caption2">
+                            <p>Discussion: Sustainable Agriculture Techniques:  </p>
+                            Engage in conversations on agroecology, permaculture, and agroforestry for sustainable food production and ecosystem restoration. Let's cultivate harmony between agriculture and nature! </p>
+                        </div>
+                        <div class="like-dislike2">
+                            <img id="likeBtn1" src="./images/like.png" alt="Like" onclick="document.getElementById('likeBtn1').src='./images/liked.png'">
+                            <img id="dislikeBtn1" src="./images/dislike.png" alt="Dislike" onclick="document.getElementById('dislikeBtn1').src='./images/disliked.png'">
+                            <img src="./images/comment.png" alt="Comment">
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="header">
+                    <h2>Discussion</h2>
+                </div>
+
+                <div class="discussion">
+                    <div class="row">
+                        <div class="profile-pic">
+                            <img src="./images/user.jpg" alt="User 1">
+                        </div>
+                        <div class="username">
+                            <p>GreenThumb2024</p>
+                            <div class="tags">
+                                <span class="tag" style="background-color: green;">Promotion</span>
+                                <span class="tag" style="background-color: red;">Hot Topic</span>
+                            </div>
+                            <p>Just harvested my first batch of organic tomatoes! 🍅 Excited to share tips on sustainable farming practices and maximizing yield without harming the environment. Who else is passionate about eco-friendly agriculture?</p>
+                            <div class="like-dislike">
+                                <img id="likeBtn1" src="./images/like.png" alt="Like" onclick="document.getElementById('likeBtn1').src='./images/liked.png'">
+                                <img id="dislikeBtn1" src="./images/dislike.png" alt="Dislike" onclick="document.getElementById('dislikeBtn1').src='./images/disliked.png'">
+                                <img src="./images/comment.png" alt="Comment">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="profile-pic">
+                            <img src="./images/user.jpg" alt="User 1">
+                        </div>
+                        <div class="username">
+                            <p>AgriGenius</p>
+                            <div class="tags">
+                                <span class="tag" style="background-color: red;">Hot Topic</span>
+                            </div>
+                            <p>Looking for advice on combating pests in my apple orchard without resorting to harmful chemicals. Anyone have experience with natural pest control methods or integrated pest management? Let's discuss!</p>
+                            <div class="like-dislike">
+                                <img id="likeBtn2" src="./images/like.png" alt="Like" onclick="document.getElementById('likeBtn2').src='./images/liked.png'">
+                                <img id="dislikeBtn2" src="./images/dislike.png" alt="Dislike" onclick="document.getElementById('dislikeBtn2').src='./images/disliked.png'">
+                                <img src="./images/comment.png" alt="Comment">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="profile-pic">
+                            <img src="./images/user.jpg" alt="User 1">
+                        </div>
+                        <div class="username">
+                            <p>PlantationPro</p>
+                            <div class="tags">
+                                <span class="tag" style="background-color: green;">Promotion</span>
+                                <span class="tag" style="background-color: red;">Hot Topic</span>
+                            </div>
+                            <p>Considering transitioning to regenerative agriculture methods on my coffee plantation. Interested in hearing success stories, challenges faced, and best practices from fellow farmers who have made the switch. Let's learn from each other!</p>
+                            <div class="like-dislike">
+                                <img id="likeBtn3" src="./images/like.png" alt="Like" onclick="document.getElementById('likeBtn3').src='./images/liked.png'">
+                                <img id="dislikeBtn3" src="./images/dislike.png" alt="Dislike" onclick="document.getElementById('dislikeBtn3').src='./images/disliked.png'">
+                                <img src="./images/comment.png" alt="Comment">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="profile-pic">
+                            <img src="./images/user.jpg" alt="User 1">
+                        </div>
+                        <div class="username">
+                            <p>HarvestHelper</p>
+                            <div class="tags">
+                                <span class="tag" style="background-color: blue;">new</span>
+                            </div>
+                            <div class="discusscontent">
+                                <p>Struggling with irrigation management in my wheat fields due to erratic weather patterns. Seeking advice on optimizing water usage and drought-resistant crop varieties. Share your insights and let's brainstorm solutions together!</p>
+                            </div>
+                            <div class="like-dislike">
+                                <img id="likeBtn4" src="./images/like.png" alt="Like" onclick="document.getElementById('likeBtn4').src='./images/liked.png'">
+                                <img id="dislikeBtn4" src="./images/dislike.png" alt="Dislike" onclick="document.getElementById('dislikeBtn4').src='./images/disliked.png'">
+                                <img src="./images/comment.png" alt="Comment">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="profile-pic">
+                            <img src="./images/user.jpg" alt="User 1">
+                        </div>
+                        <div class="username">
+                            <p>OrganicFarming</p>
+                            <div class="tags">
+                                <span class="tag" style="background-color: red;">Hot Topic</span>
+                            </div>
+                            <p>Recently started my own organic farm and facing challenges with weed control without herbicides. Open to suggestions on effective weed management strategies using mulching, cover crops, or other organic methods. Let's exchange ideas for a healthier, more sustainable future!</p>
+                            <div class="like-dislike">
+                                <img id="likeBtn5" src="./images/like.png" alt="Like" onclick="document.getElementById('likeBtn5').src='./images/liked.png'">
+                                <img id="dislikeBtn5" src="./images/dislike.png" alt="Dislike" onclick="document.getElementById('dislikeBtn5').src='./images/disliked.png'">
+                                <img src="./images/comment.png" alt="Comment">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </head>
+
+
+    <script>
+        var slideIndex = 0;
+        showSlides(); 
+
+    function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+
+    </script>
+    
+   
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">contact us</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">terms</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#">report a problem</a></li>
+                        <li><a href="#">subscription</a></li>
+                        <li><a href="#">community</a></li>
+                        <li><a href="#">profile</a></li>
+                        <li><a href="#">explore courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#">promote on greeny</a></li>
+                        <li><a href="#">help and support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+    <script type="text/javascript" src="mobile.js"></script>
+</html>
