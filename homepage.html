@@ -8,10 +8,13 @@
         <meta property="og:title" content="Home">
         <meta property="og:type" content="website">
         <link rel="stylesheet" href="homepage.css">
+        <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -40,17 +43,22 @@
                     <i class="bx bx-menu" onclick="myMenuFunction()"></i>
                 </div>
             </nav>
-            <div class="content">
-                <h1 class="animate"><b>Greenery</b></h1> 
-                <h3 class="animate">Green and Crop </h3>
-                <h3 class="animate">Management</h3>
-                <p class="animate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
-                    Hac habitasse platea dictumst quisque sagittis purus.</p>
-                <a href="#" class="content-button1 animate">How it works?</a>    
-                <a href="j" class="content-button2 animate">Get Started</a>    
+            <div class="content-container">
+                <section class="content">
+                    <div class="content-text">
+                        <h1 class="animate"><b>Greenery</b></h1> 
+                        <h3 class="animate">Green and Crop Management</h3>
+                        <p class="animate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                            Hac habitasse platea dictumst quisque sagittis purus.</p>
+                        <a href="#" class="content-button1 animate">How it works?</a>    
+                        <a href="login.html" class="content-button2 animate">Get Started</a> 
+                    </div>
+                    <div class="content-img">
+                        <img src="images/nandhu-kumar-5NGTf4oD8RA-unsplash.jpg">
+                    </div>
+                </section>   
             </div>
-            <img src="images/nandhu-kumar-5NGTf4oD8RA-unsplash.jpg" class="feature-img animate">
         </div>
         <div class="carousel" data-flickity = '{"wrapAround" : "true", "autoPlay": true}'>
             <div class="carousel-cell" style="background-image: url(images/roman-synkevych-fjj7lVpCxRE-unsplash.jpg)"></div>
@@ -59,7 +67,6 @@
             <div class="carousel-cell" style="background-image: url(images/steven-weeks-DUPFowqI6oI-unsplash.jpg)"></div>
             <div class="carousel-cell" style="background-image: url(images/wilsan-u-BCATbA86WAw-unsplash.jpg)"></div>
         </div>
-        <script type="text/javascript" src="mobile.js"></script>
 
         <section class="u-align-center u-clearfix u-grey-5 u-section-2" id="carousel_17a1">
             <div class="about-us-heading">
@@ -89,6 +96,232 @@
                 </section>
             </div>
         </section>
+
+        <div class="articles">
+            <div class="articles-heading">
+                <h1>Articles</h1>
+            </div>
+
+            <div class="box-container">
+                <div class="box loading">
+                    <img src="images/arjun-mj-792-GkRUtes-unsplash.jpg" alt="Pest Control" class="card-image">
+                    <h3 class="title">Effective Pest Control</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <a href="https://www.fieldroutes.com/blog/pest-control-methods" class="read-more-btn">Learn More</a>
+                </div>
+
+                <div class="box loading">
+                    <img src="images/lumin-osity-6DMht7wYt6g-unsplash.jpg" alt="Sustainable Crop Management" class="card-image">
+                    <h3 class="title">Sustainable Crop Management</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <a href="https://www.mdpi.com/2077-0472/13/5/954" class="read-more-btn">Learn More</a>
+                </div>
+
+                <div class="box loading">
+                    <img src="images/irina-iriser-uPKgTRAflLY-unsplash.jpg" alt="Weather and crops" class="card-image">
+                    <h3 class="title">Climate Affects Crop Yields</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <a href="https://www.nature.com/articles/s43016-022-00570-3" class="read-more-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="review-whole">
+            <div class="review-container">
+                <div class="container-left">
+                    <h1>Explore How Farmers Benefit From Our Platform</h1>
+                    <p>
+                        Join thousands of farmers who rely on our platform for valuable insights 
+                        into green farming and effective crop management strategies.
+                    </p>
+                    <p>
+                        Through our platform, farmers have gained knowledge to optimize their farming practices, 
+                        increase crop yields, and showcase their produce to a wider audience. 
+                    </p>
+                    <button>Explore Farmer Stories</button>
+                </div>
+    
+                <div class="container-right">
+                    <div class="card">
+                        <img src="images/JohnSmith.jpeg" alt="user"/>
+                        <div class="card-content">
+                            <span><i class="ri-double-quotes-l"></i></span>
+                            <div class="card-details">
+                                <p>
+                                    I am amazed by the wealth of information on this platform! 
+                                    As a farmer, I've learned so much about green farming practices that have truly transformed my crops. 
+                                    Thank you for empowering us!
+                                </p>
+                                <h4>- John Smith</h4>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="images/MichaelBrown.jpg" alt="user"/>
+                        <div class="card-content">
+                            <span><i class="ri-double-quotes-l"></i></span>
+                            <div class="card-details">
+                                <p>
+                                    I can't thank this platform enough for helping me market my produce effectively. 
+                                    The knowledge shared here has not only boosted my sales but also connected me with a broader audience. 
+                                    Truly invaluable!
+                                </p>
+                                <h4>- Michael Brown</h4>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="images/EmilyJohnson.jpg" alt="user"/>
+                        <div class="card-content">
+                            <span><i class="ri-double-quotes-l"></i></span>
+                            <div class="card-details">
+                                <p>
+                                    This website has been a game-changer for me! 
+                                    The insights on crop management have helped me increase my yields significantly. 
+                                    I highly recommend it to all farmers out there!
+                                </p>
+                                <h4>- Emily Johnson</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="statistics-whole">
+            <div class="statistics-container">
+                <div class="counters">
+                    <div class="counter customer">
+                        <i class="fa-solid fa-user"></i>
+                        <h2 class="number"><span class="value" data-value="10">0</span>k+</h2>
+                        <p class="detail">Registered Farmers</p>
+                    </div>
+                    <div class="counter project">
+                        <i class="fa-solid fa-seedling"></i>
+                        <h2 class="number"><span class="value" data-value="40">0</span>%</h2>
+                        <p class="detail">Increase in Crop Yield</p>
+                    </div>
+                    <div class="counter employee">
+                        <i class="fa-solid fa-clock"></i>
+                        <h2 class="number"><span class="value" data-value="700">0</span>+</h2>
+                        <p class="detail">Working Hours</p>
+                    </div>
+                    <div class="counter award">
+                        <i class="fa-solid fa-star"></i>
+                        <h2 class="number"><span class="value" data-value="8000">0</span>+</h2>
+                        <p class="detail">5 Stars Received</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-heading">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false">
+                    <span class="accordion-title">Why is the moon sometimes out during the day?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                        Ut tortor pretium viverra suspendisse potenti.
+                    </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-2" aria-expanded="false">
+                    <span class="accordion-title">Why is the sky blue?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                        Ut tortor pretium viverra suspendisse potenti.
+                    </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-3" aria-expanded="false">
+                    <span class="accordion-title">Will we ever discover aliens?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                        Ut tortor pretium viverra suspendisse potenti.
+                    </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-4" aria-expanded="false">
+                    <span class="accordion-title">How much does the Earth weigh?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                        Ut tortor pretium viverra suspendisse potenti.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+                var counters = $(".counters");
+                var countersPos = counters.offset().top;
+                var winHeight = $(window).height() - 20;
+                var animated = false;
+        
+                $(window).scroll(function() {
+                    if (!animated && $(this).scrollTop() + winHeight >= countersPos) {
+                        $('.value').each(function() {
+                            var $this = $(this);
+                            jQuery({ Counter: 0 }).animate({ Counter: $this.attr('data-value') }, {
+                                duration: 2000,
+                                easing: 'swing',
+                                step: function() {
+                                    $this.text(Math.ceil(this.Counter));
+                                }
+                            });
+                        });
+                        animated = true;
+                    }
+                });
+            });
+
+            const items = document.querySelectorAll('.accordion button');
+
+            function toggleAccordion() {
+                const itemToggle = this.getAttribute('aria-expanded');
+
+                for (i = 0; i < items.length; i++) {
+                    items[i].setAttribute('aria-expanded', 'false');
+                }
+
+                if (itemToggle == 'false') {
+                    this.setAttribute('aria-expanded', 'true');
+                }
+            }
+
+            items.forEach((item) => item.addEventListener('click', toggleAccordion));
+        </script>
     </body>
 
     <footer class="footer">
@@ -130,7 +363,9 @@
             </div>
         </div>
    </footer>
+    <script src="mobile.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://kit.fontawesome.com/df016f215a.js" crossorigin="anonymous"></script>
 </html>
