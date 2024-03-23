@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.top-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.alert-image {
+    margin-right: 10px;
+}
+
+.alert-image img {
+    width: 50px; /* Adjust image size as needed */
+    height: 50px; /* Adjust image size as needed */
+}
+
+.price-disclaimer {
+    font-weight: bold;
+}
+
+.item-info {
+    display: flex;
+    margin-top: 20px;
+}
+
+.left-box {
+    padding: 20px;
+    width: 33%;
+    height: auto;
+}
+
+.right-box {
+    padding: 20px;
+    width: 67%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.right-box img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.price p {
+    margin: 5px 0;
+}
+
+.increase {
+    color: green; 
+}
+
+.item-price-info p {
+    margin: 5px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow-y: auto;
+}
+
+.header {
+    text-align: left;
+    margin-top: 10%;
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.stable {
+    color: green;
+}
+
+.info-box {
+    margin-bottom: 10%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 5%;
+}
+
+.offer-section {
+    display: flex;
+    margin-top: 20px;
+}
+
+.buy-section, .sell-section {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.buy-button, .sell-button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Example button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover, .sell-button:hover {
+    background-color: #0056b3; /* Example button color on hover */
+}
+
+.detail-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}

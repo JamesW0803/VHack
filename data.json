@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Fuji Cabbage",
+        "tag": "sales",
+        "location": "Tanjung Ru, Kedah.",
+        "price": "RM5 per kg",
+        "image": "/images/cabbage.jpg"
+    },
+    {
+        "name": "Local Ginger",
+        "tag": "sales",
+        "location": "Ladang Epah, Johor.",
+        "price": "RM3 per kg",
+        "image": "/images/ginger.jpeg"
+    },
+    {
+        "name": "Brocolli",
+        "tag": "new",
+        "location": "Taman Berjaya, Pulau Pinang.",
+        "price": "RM6 per kg",
+        "image": "/images/brocolli.jpg"
+    },
+    {
+        "name": "Fuji Carrot",
+        "tag": " ",
+        "location": "Tanjung Ru, Kedah.",
+        "price": "RM3 per kg",
+        "image": "/images/carrot.jpg"
+    },
+    {
+        "name": "Crystal Corn",
+        "tag": "sales,new",
+        "location": "Ladang Merah, Selangor.",
+        "price": "RM2.50 per kg",
+        "image": "/images/corn.jpg"
+    }
+]
