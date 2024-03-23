@@ -65,7 +65,7 @@ fetch("data.json")
                 const bookmarkIcon = document.createElement("div");
                 bookmarkIcon.classList.add("bookmark-icon");
                 const bookmarkImg = document.createElement("img");
-                bookmarkImg.src = "bookmark-icon.png"; // Bookmark icon
+                bookmarkImg.src = "/images/bookmark.png"; // Bookmark icon
                 bookmarkImg.alt = "Bookmark Icon";
                 bookmarkIcon.appendChild(bookmarkImg);
                 itemDetails.appendChild(bookmarkIcon);

@@ -8,6 +8,8 @@ body {
     width: 80%;
     margin: 0 auto;
     overflow-y: auto;
+    margin-bottom: 2%;
+    
 }
 
 .header {
@@ -97,7 +99,6 @@ input[type="text"] {
 }
 
 .bookmark-icon {
-    position: absolute;
     top: 10px;
     right: 10px;
 }
@@ -118,3 +119,11 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background: linear-gradient(to bottom, rgb(227, 248, 222), #f6ffe2);
+  }

@@ -98,3 +98,18 @@ sellButton.addEventListener("click", addSellDetails);
 
 // Display existing sell details on page load
 displaySellDetails();
+
+// Remove an item from local storage
+// localStorage.removeItem("sellDetails");
+
+// Function to clear buy details from local storage and display
+function clearBuyDetails() {
+    localStorage.removeItem("buyDetails"); // Remove buy details from local storage
+    displayBuyDetails(); // Update the displayed buy details to reflect the removal
+}
+
+// Add event listener to the Clear button
+const clearButton = document.getElementById("clearButton");
+clearButton.addEventListener("click", clearBuyDetails);
+
+

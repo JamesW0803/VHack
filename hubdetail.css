@@ -9,6 +9,7 @@ body {
     padding: 20px;
     display: flex;
     align-items: center;
+    background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
@@ -41,11 +42,14 @@ body {
     width: 67%;
     height: auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    margin-bottom: 5%;
 }
 
 .right-box img {
     width: 100%;
     height: auto;
+    
 }
 
 h2 {
@@ -62,6 +66,7 @@ h2 {
 
 .item-price-info p {
     margin: 5px 0;
+    
 }
 
 .container {
@@ -79,6 +84,7 @@ h2 {
 table {
     border-collapse: collapse;
     width: 100%;
+    background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -101,6 +107,7 @@ th {
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 5%;
+    background-color: #ffffff;
 }
 
 .offer-section {
@@ -111,7 +118,7 @@ th {
 .buy-section, .sell-section {
     flex: 1;
     padding: 20px;
-    border: 1px solid #ccc;
+    
 }
 
 .buy-button, .sell-button {
@@ -122,6 +129,8 @@ th {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 2%;
+    
 }
 
 .buy-button:hover, .sell-button:hover {
@@ -133,4 +142,14 @@ th {
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background: linear-gradient(to bottom, rgb(227, 248, 222), #f6ffe2);
 }
