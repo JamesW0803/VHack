@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help and Support</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="support.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a class="logo" href="loggedInHomepage.html"><img src="images/Greenery.svg" alt="logo"></a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="loggedInHomepage.html" class="link active">Home</a></li>
+                    <li><a href="pricing.html" class="link">Pricing</a></li>
+                    <li><a href="#" class="link">Community</a></li>
+                    <li><a href="learning/learning.html" class="link">Learning</a></li>
+                    <li><a href="#" class="link">Farm Hub</a></li>
+                </ul>
+            </div>
+            <div class="user-pic">
+                <img src="images/myProfile.png"  onclick="toggleMenu()">
+            </div>
+
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="images/myProfile.png">
+                        <h3>James Wong</h3>
+                    </div>
+                    <hr>
+                    <a href="settings.html" class="sub-menu-link">
+                        <img src="images/setting.png">
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="support.html" class="sub-menu-link">
+                        <img src="images/help.png">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="homepage.html" class="sub-menu-link">
+                        <img src="images/logout.png">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div> 
+        </nav>
+    </div>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Sit amet purus gravida quis blandit turpis.</p>
+        </div>
+        <div class="support-container">
+            <div class="contact-info">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-map"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>16 Jalan Tun Razak, Kuala Lumpur, <br>Wilayah Persekutuan, <br>50400, Malaysia</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+60 3-2387-1234</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>help@support.greenery.com.my</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="input-box">
+                        <input type="text" name="" required>
+                        <span>Full Name</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="" required>
+                        <span>Email</span>
+                    </div>
+                    <div class="input-box">
+                        <textarea required></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+<script src="https://kit.fontawesome.com/df016f215a.js" crossorigin="anonymous"></script>
+</html>
