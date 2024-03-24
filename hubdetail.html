@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:title" content="Home">
         <meta property="og:type" content="website">
-        <link rel="stylesheet" href="homepage.css">
+        <link rel="stylesheet" href="loggedInHomepage.css">
         <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -20,28 +20,49 @@
         <div class="wrapper">
             <nav class="nav">
                 <div class="nav-logo">
-                    <a class="logo" href="homepage.html"><img src="images/Greenery.svg" alt="logo"></a>
+                    <a class="logo" href="loggedInHomepage.html"><img src="images/Greenery.svg" alt="logo"></a>
                 </div>
                 <div class="nav-menu" id="navMenu">
                     <ul>
-                        <li><a href="homepage.html" class="link">Home</a></li>
+                        <li><a href="loggedInHomepage.html" class="link active">Home</a></li>
                         <li><a href="pricing.html" class="link">Pricing</a></li>
                         <li><a href="Community.html" class="link">Community</a></li>
                         <li><a href="learning/learning.html" class="link">Learning</a></li>
-                        <li><a href="hubdetail.html" class="link active">Farm Hub</a></li>
+                        <li><a href="hubdetail.html" class="link">Farm Hub</a></li>
                     </ul>
                 </div>
-                <div class="nav-button">
-                    <a href="login.html">
-                        <button class="btn white-btn" id="loginBtn">Sign In</button>
-                    </a>
-                    <a href="signUp.html">
-                        <button class="btn" id="registerBtn">Sign Up</button>
-                    </a>
+                <div class="user-pic">
+                    <img src="images/myProfile.png"  onclick="toggleMenu()">
                 </div>
+
                 <div class="nav-menu-btn">
                     <i class="bx bx-menu" onclick="myMenuFunction()"></i>
                 </div>
+
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="images/myProfile.png">
+                            <h3>James Wong</h3>
+                        </div>
+                        <hr>
+                        <a href="settings.html" class="sub-menu-link">
+                            <img src="images/setting.png">
+                            <p>Settings & Privacy</p>
+                            <span>></span>
+                        </a>
+                        <a href="support.html" class="sub-menu-link">
+                            <img src="images/help.png">
+                            <p>Help & Support</p>
+                            <span>></span>
+                        </a>
+                        <a href="homepage.html" class="sub-menu-link">
+                            <img src="images/logout.png">
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div> 
             </nav>
 
             <div class="container">
@@ -105,6 +126,13 @@
 
             </div>
         </div>
+        <script>
+            let subMenu = document.getElementById("subMenu");
+
+            function toggleMenu(){
+                subMenu.classList.toggle("open-menu");
+            }
+        </script>
     </body>
     
     <footer class="footer">

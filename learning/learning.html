@@ -32,20 +32,49 @@
     <div class="wrapper">
         <nav class="nav">
             <div class="nav-logo">
-                <a class="logo" href="../homepage.html"><img src="../images/Greenery.svg" alt="logo"></a>
+                <a class="logo" href="loggedInHomepage.html"><img src="../images/Greenery.svg" alt="logo"></a>
             </div>
             <div class="nav-menu" id="navMenu">
                 <ul>
-                    <li><a href="../homepage.html" class="link">Home</a></li>
+                    <li><a href="../loggedInHomepage.html" class="link">Home</a></li>
                     <li><a href="../pricing.html" class="link">Pricing</a></li>
                     <li><a href="../Community.html" class="link">Community</a></li>
-                    <li><a href="learning.html" class="link active">Learning</a></li>
+                    <li><a href="learning/learning.html" class="link active">Learning</a></li>
                     <li><a href="../farmhub.html" class="link">Farm Hub</a></li>
                 </ul>
             </div>
+            <div class="user-pic">
+                <img src="../images/myProfile.png"  onclick="toggleMenu()">
+            </div>
+
             <div class="nav-menu-btn">
                 <i class="bx bx-menu" onclick="myMenuFunction()"></i>
             </div>
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="../images/myProfile.png">
+                        <h3>James Wong</h3>
+                    </div>
+                    <hr>
+                    <a href="../settings.html" class="sub-menu-link">
+                        <img src="../images/setting.png">
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="../support.html" class="sub-menu-link">
+                        <img src="../images/help.png">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="../homepage.html" class="sub-menu-link">
+                        <img src="../images/logout.png">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div> 
         </nav>
         <div class="content-container">
             <section class="content">
@@ -201,6 +230,17 @@
             </div>
         </center>
         <br><br>
+        <script>
+            let subMenu = document.getElementById("subMenu");
+
+            function toggleMenu(){
+                subMenu.classList.toggle("open-menu");
+            }
+
+            document.getElementById("submitButton").addEventListener("click", function() {
+                document.getElementById("analysisContainer").style.display = "flex"; 
+            });
+        </script>
 </body>
 
 <footer class="footer">
