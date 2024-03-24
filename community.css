@@ -180,3 +180,26 @@ body {
     height: auto;
     background: linear-gradient(to bottom, rgb(227, 248, 222), #f6ffe2);
   }
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.search-input {
+    width: 300px; 
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px; 
+    font-size: 16px;
+    outline: none;
+}
+
+.search-icon {
+    margin-right: 10px; 
+}
+
+.search-input::placeholder {
+    color: #aaa; 
+}
