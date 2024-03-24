@@ -1,11 +1,7 @@
 # VHack
 # Member: 
-## 1. James
-## 2. Carmen
-## 3. Qile
-## 4. Munwor
+## 1. James Wong Yi Ngie
+## 2. Carmen Lam Kah Man
+## 3. Chang Qi Le
+## 4. Fong Mun Wor
 
-I add in these lines in the readme file. So that means I have make changes to the original files. 
-Do some testing on fork and pull on Git. 
-(Remember to save the file after you write the code)
-Ctrl + S

@@ -171,99 +171,17 @@
 
                 <div class="header">
                     <h2>Discussion</h2>
+                    <div class="search-container">
+                        <img src="./images/search.png" alt="Search" class="search-icon">
+                        <input type="text" id="searchBar" class="search-input" placeholder="Search">
+                    </div>
                 </div>
 
                 <div class="discussion">
-                    <div class="row">
-                        <div class="profile-pic">
-                            <img src="./images/user.jpg" alt="User 1">
-                        </div>
-                        <div class="username">
-                            <p>GreenThumb2024</p>
-                            <div class="tags">
-                                <span class="tag" style="background-color: green;">Promotion</span>
-                                <span class="tag" style="background-color: red;">Hot Topic</span>
-                            </div>
-                            <p>Just harvested my first batch of organic tomatoes! 🍅 Excited to share tips on sustainable farming practices and maximizing yield without harming the environment. Who else is passionate about eco-friendly agriculture?</p>
-                            <div class="like-dislike">
-                                <img id="likeBtn1" src="./images/like.png" alt="Like" onclick="document.getElementById('likeBtn1').src='./images/liked.png'">
-                                <img id="dislikeBtn1" src="./images/dislike.png" alt="Dislike" onclick="document.getElementById('dislikeBtn1').src='./images/disliked.png'">
-                                <img src="./images/comment.png" alt="Comment">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="profile-pic">
-                            <img src="./images/user.jpg" alt="User 1">
-                        </div>
-                        <div class="username">
-                            <p>AgriGenius</p>
-                            <div class="tags">
-                                <span class="tag" style="background-color: red;">Hot Topic</span>
-                            </div>
-                            <p>Looking for advice on combating pests in my apple orchard without resorting to harmful chemicals. Anyone have experience with natural pest control methods or integrated pest management? Let's discuss!</p>
-                            <div class="like-dislike">
-                                <img id="likeBtn2" src="./images/like.png" alt="Like" onclick="document.getElementById('likeBtn2').src='./images/liked.png'">
-                                <img id="dislikeBtn2" src="./images/dislike.png" alt="Dislike" onclick="document.getElementById('dislikeBtn2').src='./images/disliked.png'">
-                                <img src="./images/comment.png" alt="Comment">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="profile-pic">
-                            <img src="./images/user.jpg" alt="User 1">
-                        </div>
-                        <div class="username">
-                            <p>PlantationPro</p>
-                            <div class="tags">
-                                <span class="tag" style="background-color: green;">Promotion</span>
-                                <span class="tag" style="background-color: red;">Hot Topic</span>
-                            </div>
-                            <p>Considering transitioning to regenerative agriculture methods on my coffee plantation. Interested in hearing success stories, challenges faced, and best practices from fellow farmers who have made the switch. Let's learn from each other!</p>
-                            <div class="like-dislike">
-                                <img id="likeBtn3" src="./images/like.png" alt="Like" onclick="document.getElementById('likeBtn3').src='./images/liked.png'">
-                                <img id="dislikeBtn3" src="./images/dislike.png" alt="Dislike" onclick="document.getElementById('dislikeBtn3').src='./images/disliked.png'">
-                                <img src="./images/comment.png" alt="Comment">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="profile-pic">
-                            <img src="./images/user.jpg" alt="User 1">
-                        </div>
-                        <div class="username">
-                            <p>HarvestHelper</p>
-                            <div class="tags">
-                                <span class="tag" style="background-color: blue;">new</span>
-                            </div>
-                            <div class="discusscontent">
-                                <p>Struggling with irrigation management in my wheat fields due to erratic weather patterns. Seeking advice on optimizing water usage and drought-resistant crop varieties. Share your insights and let's brainstorm solutions together!</p>
-                            </div>
-                            <div class="like-dislike">
-                                <img id="likeBtn4" src="./images/like.png" alt="Like" onclick="document.getElementById('likeBtn4').src='./images/liked.png'">
-                                <img id="dislikeBtn4" src="./images/dislike.png" alt="Dislike" onclick="document.getElementById('dislikeBtn4').src='./images/disliked.png'">
-                                <img src="./images/comment.png" alt="Comment">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="profile-pic">
-                            <img src="./images/user.jpg" alt="User 1">
-                        </div>
-                        <div class="username">
-                            <p>OrganicFarming</p>
-                            <div class="tags">
-                                <span class="tag" style="background-color: red;">Hot Topic</span>
-                            </div>
-                            <p>Recently started my own organic farm and facing challenges with weed control without herbicides. Open to suggestions on effective weed management strategies using mulching, cover crops, or other organic methods. Let's exchange ideas for a healthier, more sustainable future!</p>
-                            <div class="like-dislike">
-                                <img id="likeBtn5" src="./images/like.png" alt="Like" onclick="document.getElementById('likeBtn5').src='./images/liked.png'">
-                                <img id="dislikeBtn5" src="./images/dislike.png" alt="Dislike" onclick="document.getElementById('dislikeBtn5').src='./images/disliked.png'">
-                                <img src="./images/comment.png" alt="Comment">
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
+
+                <script src="discussion.js"></script>
             </div>
         </div>
     </body>
