@@ -1,198 +1,275 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Green and Crop Management</title>
+        <meta name="description" content="Green and Crop Management">
+        <meta property="og:title" content="Home">
+        <meta property="og:type" content="website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Green and Crop Management</title>
+        <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+        <link rel="stylesheet" href="loggedInHomepage.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="nav">
+                <div class="nav-logo">
+                    <a class="logo" href="loggedInHomepage.html"><img src="images/Greenery.svg" alt="logo"></a>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="loggedInHomepage.html" class="link active">Home</a></li>
+                        <li><a href="pricing.html" class="link">Pricing</a></li>
+                        <li><a href="Community.html" class="link">Community</a></li>
+                        <li><a href="learning/learning.html" class="link">Learning</a></li>
+                        <li><a href="hubdetail.html" class="link">Farm Hub</a></li>
+                    </ul>
+                </div>
+                <div class="user-pic">
+                    <img src="images/myProfile.png"  onclick="toggleMenu()">
+                </div>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Green and Crop Management</title>
-    <meta name="description" content="Green and Crop Management">
-    <meta property="og:title" content="Home">
-    <meta property="og:type" content="website">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green and Crop Management</title>
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-    <link rel="stylesheet" href="loggedInHomepage.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-</head>
+                <div class="nav-menu-btn">
+                    <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+                </div>
 
-<body>
-    <div class="wrapper">
-        <nav class="nav">
-            <div class="nav-logo">
-                <a class="logo" href="loggedInHomepage.html"><img src="images/Greenery.svg" alt="logo"></a>
-            </div>
-            <div class="nav-menu" id="navMenu">
-                <ul>
-                    <li><a href="homepage.html" class="link active">Home</a></li>
-                    <li><a href="#" class="link">Settings</a></li>
-                    <li><a href="#" class="link">Community</a></li>
-                    <li><a href="#" class="link">Learning</a></li>
-                    <li><a href="#" class="link">Farm Hub</a></li>
-                </ul>
-            </div>
-            <div class="user-pic">
-                <img src="images/myProfile.png" onclick="toggleMenu()">
-            </div>
-
-            <div class="nav-menu-btn">
-                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
-            </div>
-
-            <div class="sub-menu-wrap" id="subMenu">
-                <div class="sub-menu">
-                    <div class="user-info">
-                        <img src="images/myProfile.png">
-                        <h3>James Wong</h3>
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="images/myProfile.png">
+                            <h3>James Wong</h3>
+                        </div>
+                        <hr>
+                        <a href="settings.html" class="sub-menu-link">
+                            <img src="images/setting.png">
+                            <p>Settings & Privacy</p>
+                            <span>></span>
+                        </a>
+                        <a href="support.html" class="sub-menu-link">
+                            <img src="images/help.png">
+                            <p>Help & Support</p>
+                            <span>></span>
+                        </a>
+                        <a href="homepage.html" class="sub-menu-link">
+                            <img src="images/logout.png">
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
                     </div>
-                    <hr>
-                    <a href="#" class="sub-menu-link">
-                        <img src="images/profile.png">
-                        <p>Edit Profile</p>
-                        <span>></span>
-                    </a>
-                    <a href="#" class="sub-menu-link">
-                        <img src="images/setting.png">
-                        <p>Settings & Privacy</p>
-                        <span>></span>
-                    </a>
-                    <a href="#" class="sub-menu-link">
-                        <img src="images/help.png">
-                        <p>Help & Support</p>
-                        <span>></span>
-                    </a>
-                    <a href="homepage.html" class="sub-menu-link">
-                        <img src="images/logout.png">
-                        <p>Logout</p>
-                        <span>></span>
-                    </a>
-                </div>
-            </div>
-        </nav>
-
-        <div class="weather-wrapper">
-            <div class="weather-container">
-                <div class="search-box">
-                    <i class="bx bxs-map"></i>
-                    <input type="text" placeholder="enter your location" />
-                    <button class="bx bx-search"></button>
-                </div>
-                <p class="city-hide">city hide</p>
-
-                <div class="weather-box">
-                    <div class="box">
-                        <div class="info-weather">
+                </div> 
+            </nav>
+            <div class="first-container">
+                <div class="weather-container">
+                    <div class="search-box">
+                        <i class="bx bxs-map"></i>
+                        <input type="text" placeholder="enter your location" />
+                        <button class="bx bx-search"></button>
+                    </div>
+                    <p class="city-hide">city hide</p>
+              
+                    <div class="weather-box">
+                        <div class="box">
+                            <div class="info-weather">
                             <div class="weather">
                                 <img src="images/cloud.png" alt="" />
                                 <p class="temperature">16<span>°C</span></p>
                                 <p class="description">Broken Clouds</p>
                             </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="weather-details">
-                    <div class="humidity">
-                        <i class="bx bx-water"></i>
-                        <div class="text">
+                    <div class="weather-details">
+                        <div class="humidity">
+                            <i class="bx bx-water"></i>
+                            <div class="text">
                             <div class="info-humidity">
                                 <span>0%</span>
                             </div>
                             <p>Humidity</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="wind">
-                        <i class="bx bx-wind"></i>
-                        <div class="text">
+                        <div class="wind">
+                            <i class="bx bx-wind"></i>
+                            <div class="text">
                             <div class="info-wind">
                                 <span>0Km/h</span>
                             </div>
                             <p>Wind Speed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="not-found">
+                        <div class="box">
+                            <img src="images/404.png" />
+                            <p>Oops! Location not found!</p>
                         </div>
                     </div>
                 </div>
-                <div class="not-found">
-                    <div class="box">
-                        <img src="images/404.png" />
-                        <p>Oops! Location not found!</p>
+    
+                <div class="plant-details-container">
+                    <div class="plant-details">
+                        
                     </div>
                 </div>
             </div>
-
-            <div class="plant-details-container">
-                <div class="plant-details">
-
+        </div>
+        <div class ="analysis-wrapper">
+            <div class="analysis-container1">
+                <div class="analysis-img1">
+                    <img src="images/yield of important staple crops 1.png">
+                </div>
+            </div>
+        
+            <div class="analysis-container2">
+                <div class="analysis-img2">
+                    <img src="images/yield of important staple crops.png">
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="analysis-wrapper">
-        <div class="analysis-container1">
-            <div class="analysis-img1">
-                <img src="images/yield of important staple crops 1.png">
+        <div class="details-container">
+            <div class="details-heading">
+                <h1>Tell Us About Your Farm</h1>
             </div>
+            <form action="#" class="form">
+                <div class="details-input">
+                    <label>Farm Location</label>
+                    <input type="text" placeholder="Enter your location" required/>
+                </div>
+
+                <div class="details-input">
+                    <label>Previous Plant</label>
+                    <input type="text" placeholder="Enter your previous plant" required/>
+                </div>
+
+                <div class="details-input">
+                    <label>Soil Type</label>
+                    <input type="text" placeholder="Enter your soil type (e.g. loam soil, sandy soil, clay soil)" required/>
+                </div>
+
+                <div class="column">
+                    <div class="details-input">
+                      <label>Humidity Level (%)</label>
+                      <select id="humidityLevel" name="humidityLevel" required>
+                        <option value="">Select Humidity Level</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    </div>
+                    <div class="details-input">
+                      <label>Temperature (°C)</label>
+                      <input type="number" placeholder="Enter the temperature of your location" required />
+                    </div>
+                </div>
+                <button id="submitButton">Submit</button>
+            </form>
         </div>
 
-        <div class="analysis-container2">
-            <div class="analysis-img2">
-                <img src="images/yield of important staple crops.png">
+        <div class="analysis-container" id="analysisContainer" style="display: none;">
+            <div class="analysis-heading">
+                <h1>Recommended Plants</h1>
             </div>
-        </div>
-    </div>
+            <div class="vege">
+                <div class="vege-preview">
+                    <img src="images/okra.jpg" alt="Okra plant"/>
+                </div>
+                <div class="vege-info">
+                    <h6>Plant: Okra</h6>
+                    <p><strong>Soil Type: </strong>Well-drained, loamy soil</p>
+                    <p><strong>Location: </strong>Full sun exposure</p>
+                    <p><strong>Humidity: </strong>High</p>
+                    <p><strong>Temperature: </strong>25-35°C</p>
+                    <button class="btn">Show Details</button>
+                </div>
+            </div>
 
-    <script>
-        let subMenu = document.getElementById("subMenu");
+            <div class="vege">
+                <div class="vege-preview">
+                    <img src="images/spinach.jpg" alt="Spinach plant"/>
+                </div>
+                <div class="vege-info">
+                    <h6>Plant: Spinach</h6>
+                    <p><strong>Soil Type: </strong>Well-drained, loamy soil</p>
+                    <p><strong>Location: </strong>Partial shade (in warmer climates), full <br> sun (in cooler climate)</p>
+                    <p><strong>Humidity: </strong>Moderate</p>
+                    <p><strong>Temperature: </strong>15-20°C</p>
+                    <button class="btn">Show Details</button>
+                </div>
+            </div>
 
-        function toggleMenu() {
-            subMenu.classList.toggle("open-menu");
-        }
-    </script>
-</body>
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="footer-col">
-                <ul>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">contact us</a></li>
-                    <li><a href="#">privacy policy</a></li>
-                    <li><a href="#">terms</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <ul>
-                    <li><a href="#">report a problem</a></li>
-                    <li><a href="#">subscription</a></li>
-                    <li><a href="#">community</a></li>
-                    <li><a href="#">profile</a></li>
-                    <li><a href="#">explore courses</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <ul>
-                    <li><a href="#">promote on greeny</a></li>
-                    <li><a href="#">help and support</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>follow us</h4>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <div class="vege">
+                <div class="vege-preview">
+                    <img src="images/radish.jpg" alt="Radish plant"/>
+                </div>
+                <div class="vege-info">
+                    <h6>Plant: Radish</h6>
+                    <p><strong>Soil Type: </strong>Well-drained, sandy soil</p>
+                    <p><strong>Location: </strong>Full sun to partial shade</p>
+                    <p><strong>Humidity: </strong>Moderate</p>
+                    <p><strong>Temperature: </strong>15-25°C</p>
+                    <button class="btn">Show Details</button>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script type="text/javascript" src="mobile.js"></script>
+        <script>
+            let subMenu = document.getElementById("subMenu");
 
+            function toggleMenu(){
+                subMenu.classList.toggle("open-menu");
+            }
+
+            document.getElementById("submitButton").addEventListener("click", function() {
+                document.getElementById("analysisContainer").style.display = "flex"; 
+            });
+        </script>
+    </body>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">contact us</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">terms</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#">report a problem</a></li>
+                        <li><a href="#">subscription</a></li>
+                        <li><a href="#">community</a></li>
+                        <li><a href="#">profile</a></li>
+                        <li><a href="#">explore courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#">promote on greeny</a></li>
+                        <li><a href="#">help and support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="mobile.js"></script>
 </html>
